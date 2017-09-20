@@ -1,8 +1,8 @@
 <?php
 $textInput='Harshit Shah';
 $obj = new main();
-$obj->printString($texIinput);
-$obj->stringLength($textInput)
+$obj ->printString($textInput);
+$obj ->stringLength($textInput);
 class main {
 public function_construct() {
 echo 'hello world';
@@ -17,10 +17,9 @@ public function stringLength($text){
 echo '<h1> String Length Example</h1>';
 }
 public function_destruct() {
-
 }
 }
-?>
+?>php
 
 
 
