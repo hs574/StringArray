@@ -1,8 +1,9 @@
 <?php
 
   $obj = new main();
-  $text = "my text";
+  $text = "Harshit";
     $obj->str_repeat1($text);
+    $obj->str_lower1($text);
 
   $array = array(1,2,3,4,5,6,7);
   
@@ -18,6 +19,12 @@
     public function str_repeat1($text) {
       echo '<h1>String repeat function demo </h1>';
       echo str_repeat("$text", 10);
+      echo '<hr>';
+    }
+    
+    public function str_lower1($text) {
+      echo '<h1>String repeat function demo </h1>';
+      echo strtolower($text);
       echo '<hr>';
     }
 
