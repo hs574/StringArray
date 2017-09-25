@@ -2,7 +2,7 @@
 
   $obj = new main();
   $text = "my text";
-    $obj->printthis($text);
+    $obj->str_repeat1($text);
 
   $array = array(1,2,3,4,5,6,7);
   
@@ -11,11 +11,11 @@
 
     public function __construct() {
 
-      echo '10 string functions/b> </br>';
+      echo '<b>10 string functions</b> </br>';
 
     }
 
-    public function str_repeat($text) {
+    public function str_repeat1($text) {
       echo '<h1>String repeat function demo </h1>';
       echo str_repeat("$text", 10);
       echo '<hr>';
