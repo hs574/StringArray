@@ -23,7 +23,7 @@
     }
     
     public function str_lower1($text) {
-      echo '<h1>String repeat function demo </h1>';
+      echo '<h1>String is converted to lower case </h1>';
       echo strtolower($text);
       echo '<hr>';
     }
