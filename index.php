@@ -109,7 +109,7 @@
         
 
         public function substr1($text) {
-      echo '<h1>String Trim function </h1>';
+      echo '<h1>Substring function </h1>';
     
 $rest = substr($text, -1);   
            echo $rest;
