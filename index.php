@@ -13,11 +13,22 @@
     $obj->str_word_count1($text2);
     $obj->strtrim1($text2);
     $obj->substr1($text);
+    $obj ->__construct1();
+ $array = array(1,2,3,4,5,6,7);
+ $array1=array( "banana", "orange","pineapple");
+$games = array("d" => "cricket", "a" => "tennis", "b" => "badminton", "c" => "football");
+  $obj->array_push1($array1);
+    $obj->array_pop1($array1);
+    $obj->asort1($games);
+    $obj->arraycount1($games);
+    $obj->arraymerge1($array1,$games);
+    $obj->array_reverse1($games);
+   $obj->array_shift1($games);
+   $obj->array_unshift1($array1);
+     $obj->array_values1($games);
+     $obj->array_chunk1($games);
 
 
-
-  $array = array(1,2,3,4,5,6,7);
-  
 
   class main {
 
@@ -109,7 +120,7 @@
         
 
         public function substr1($text) {
-      echo '<h1>Substring function </h1>';
+      echo '<h1>String Trim function </h1>';
     
 $rest = substr($text, -1);   
            echo $rest;
@@ -120,15 +131,100 @@ $rest = substr($text, -1);
         
 
       
-      
+      public function __construct1() {
 
-    public function printArray($array) {
-      echo '<h1>array print function</h1>';
-      print_r($array);
-      echo '<hr>';
+      echo '<b>10 Array functions</b> </br>';
+
     }
       
+       public function array_push1($array1) {
+      echo '<h1>Array push function </h1>';
+    
+
+ array_push($array1, "apple", "raspberry");
+print_r($array1);
+            echo '<hr>';
+}
+
+
       
+      
+    
+ public function array_pop1($array1) {
+      echo '<h1>Array Pop function </h1>';
+    
+
+ array_pop($array1);
+print_r($array1);
+      echo '<hr>';
+}
+      
+      public function asort1($games) {
+      echo '<h1>Array Sort function </h1>';
+    asort($games);
+foreach ($games as $key => $val) {
+    echo "$key = $val\n";
+}
+
+      echo '<hr>';
+
+      }    
+          
+ public function arraycount1($array1) {
+      echo '<h1>Array count function </h1>';
+    
+
+print_r(count($array1));
+      echo '<hr>';
+}
+     
+
+       public function arraymerge1($array1,$games) {
+      echo '<h1>Array Merge function </h1>';
+    
+
+print_r(array_merge($array1, $games));
+      echo '<hr>';
+}
+      
+       public function array_reverse1($games) {
+      echo '<h1>Array Reverse function </h1>';
+    $reversed = array_reverse($games);
+$preserved = array_reverse($games, true);
+
+print_r($games);
+print_r($reversed);
+print_r($preserved);
+      echo '<hr>';
+}
+      
+      public function array_shift1($games) {
+          echo '<h1>Array Shift function </h1>';
+     $array1 = array_shift($games);
+print_r($games);
+      echo '<hr>';
+}
+      
+      
+      
+       public function array_unshift1($array1) {
+          echo '<h1>Array UnShift function </h1>';
+    array_unshift($array1, "apple", "raspberry");
+print_r($array1);
+      echo '<hr>';
+}
+       public function array_values1($games) {
+          echo '<h1>Array Values function </h1>';
+    print_r(array_values($games));
+      echo '<hr>';
+}
+       public function array_chunk1($games) {
+          echo '<h1>Array Chunk function </h1>';
+    print_r(array_chunk($games, 2));
+print_r(array_chunk($games, 2, true));
+      echo '<hr>';
+}
+     
     
     public function __destruct() {
 
@@ -142,6 +238,8 @@ $rest = substr($text, -1);
 
 
 ?>
+
+
 
 
 
